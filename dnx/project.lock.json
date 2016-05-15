@@ -2,8 +2,55 @@
   "locked": false,
   "version": 2,
   "targets": {
-    "DNX,Version=v4.5.1": {},
+    "DNX,Version=v4.5.1": {
+      "Amqp/1.1.9-dnx-preview": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Transactions"
+        ],
+        "compile": {
+          "lib/dnx451/Amqp.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Amqp.dll": {}
+        }
+      }
+    },
     "DNXCore,Version=v5.0": {
+      "Amqp/1.1.9-dnx-preview": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10",
+          "System.Collections.Concurrent": "4.0.10",
+          "System.Collections.NonGeneric": "4.0.0",
+          "System.Diagnostics.Tools": "4.0.0",
+          "System.Net.NameResolution": "4.0.0-beta-23516",
+          "System.Net.Security": "4.0.0-beta-23516",
+          "System.Net.Sockets": "4.1.0-beta-23516",
+          "System.Reflection": "4.0.0",
+          "System.Reflection.Emit.Lightweight": "4.0.0",
+          "System.Reflection.Extensions": "4.0.0",
+          "System.Reflection.TypeExtensions": "4.0.0",
+          "System.Runtime.Serialization.Primitives": "4.1.0",
+          "System.Security.Claims": "4.0.0",
+          "System.Security.Principal": "4.0.0",
+          "System.Threading": "4.0.10",
+          "System.Threading.Tasks": "4.0.10",
+          "System.Threading.Thread": "4.0.0-beta-23516",
+          "System.Threading.ThreadPool": "4.0.10-beta-23516",
+          "System.Threading.Timer": "4.0.0"
+        },
+        "compile": {
+          "lib/dnxcore50/Amqp.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Amqp.dll": {}
+        }
+      },
       "Microsoft.Win32.Primitives/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -528,6 +575,23 @@
           "lib/DNXCore50/System.Text.Encoding.Extensions.dll": {}
         }
       },
+      "System.Text.RegularExpressions/4.0.10": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Threading": "4.0.10"
+        },
+        "compile": {
+          "ref/dotnet/System.Text.RegularExpressions.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Text.RegularExpressions.dll": {}
+        }
+      },
       "System.Threading/4.0.10": {
         "type": "package",
         "dependencies": {
@@ -604,9 +668,73 @@
         }
       }
     },
-    "DNX,Version=v4.5.1/win7-x86": {},
-    "DNX,Version=v4.5.1/win7-x64": {},
+    "DNX,Version=v4.5.1/win7-x86": {
+      "Amqp/1.1.9-dnx-preview": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Transactions"
+        ],
+        "compile": {
+          "lib/dnx451/Amqp.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Amqp.dll": {}
+        }
+      }
+    },
+    "DNX,Version=v4.5.1/win7-x64": {
+      "Amqp/1.1.9-dnx-preview": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "mscorlib",
+          "System",
+          "System.Core",
+          "System.Transactions"
+        ],
+        "compile": {
+          "lib/dnx451/Amqp.dll": {}
+        },
+        "runtime": {
+          "lib/dnx451/Amqp.dll": {}
+        }
+      }
+    },
     "DNXCore,Version=v5.0/win7-x86": {
+      "Amqp/1.1.9-dnx-preview": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10",
+          "System.Collections.Concurrent": "4.0.10",
+          "System.Collections.NonGeneric": "4.0.0",
+          "System.Diagnostics.Tools": "4.0.0",
+          "System.Net.NameResolution": "4.0.0-beta-23516",
+          "System.Net.Security": "4.0.0-beta-23516",
+          "System.Net.Sockets": "4.1.0-beta-23516",
+          "System.Reflection": "4.0.0",
+          "System.Reflection.Emit.Lightweight": "4.0.0",
+          "System.Reflection.Extensions": "4.0.0",
+          "System.Reflection.TypeExtensions": "4.0.0",
+          "System.Runtime.Serialization.Primitives": "4.1.0",
+          "System.Security.Claims": "4.0.0",
+          "System.Security.Principal": "4.0.0",
+          "System.Threading": "4.0.10",
+          "System.Threading.Tasks": "4.0.10",
+          "System.Threading.Thread": "4.0.0-beta-23516",
+          "System.Threading.ThreadPool": "4.0.10-beta-23516",
+          "System.Threading.Timer": "4.0.0"
+        },
+        "compile": {
+          "lib/dnxcore50/Amqp.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Amqp.dll": {}
+        }
+      },
       "Microsoft.Win32.Primitives/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -1324,6 +1452,23 @@
         },
         "runtime": {
           "lib/DNXCore50/System.Text.Encoding.Extensions.dll": {}
+        }
+      },
+      "System.Text.RegularExpressions/4.0.10": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Threading": "4.0.10"
+        },
+        "compile": {
+          "ref/dotnet/System.Text.RegularExpressions.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Text.RegularExpressions.dll": {}
         }
       },
       "System.Threading/4.0.10": {
@@ -1403,6 +1548,36 @@
       }
     },
     "DNXCore,Version=v5.0/win7-x64": {
+      "Amqp/1.1.9-dnx-preview": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10",
+          "System.Collections.Concurrent": "4.0.10",
+          "System.Collections.NonGeneric": "4.0.0",
+          "System.Diagnostics.Tools": "4.0.0",
+          "System.Net.NameResolution": "4.0.0-beta-23516",
+          "System.Net.Security": "4.0.0-beta-23516",
+          "System.Net.Sockets": "4.1.0-beta-23516",
+          "System.Reflection": "4.0.0",
+          "System.Reflection.Emit.Lightweight": "4.0.0",
+          "System.Reflection.Extensions": "4.0.0",
+          "System.Reflection.TypeExtensions": "4.0.0",
+          "System.Runtime.Serialization.Primitives": "4.1.0",
+          "System.Security.Claims": "4.0.0",
+          "System.Security.Principal": "4.0.0",
+          "System.Threading": "4.0.10",
+          "System.Threading.Tasks": "4.0.10",
+          "System.Threading.Thread": "4.0.0-beta-23516",
+          "System.Threading.ThreadPool": "4.0.10-beta-23516",
+          "System.Threading.Timer": "4.0.0"
+        },
+        "compile": {
+          "lib/dnxcore50/Amqp.dll": {}
+        },
+        "runtime": {
+          "lib/dnxcore50/Amqp.dll": {}
+        }
+      },
       "Microsoft.Win32.Primitives/4.0.0": {
         "type": "package",
         "dependencies": {
@@ -2120,6 +2295,23 @@
         },
         "runtime": {
           "lib/DNXCore50/System.Text.Encoding.Extensions.dll": {}
+        }
+      },
+      "System.Text.RegularExpressions/4.0.10": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.10",
+          "System.Globalization": "4.0.10",
+          "System.Resources.ResourceManager": "4.0.0",
+          "System.Runtime": "4.0.20",
+          "System.Runtime.Extensions": "4.0.10",
+          "System.Threading": "4.0.10"
+        },
+        "compile": {
+          "ref/dotnet/System.Text.RegularExpressions.dll": {}
+        },
+        "runtime": {
+          "lib/dotnet/System.Text.RegularExpressions.dll": {}
         }
       },
       "System.Threading/4.0.10": {
@@ -2200,6 +2392,21 @@
     }
   },
   "libraries": {
+    "Amqp/1.1.9-dnx-preview": {
+      "type": "package",
+      "sha512": "EpEZXe02DKCrrj/XcQJBi4WW6dWNIUPbZhtpzzZ5r8mMRMItedeb6VAQwsyJNyT+TvE/+uSSkdv/VUdR1vJI2A==",
+      "files": [
+        "Amqp.1.1.9-dnx-preview.nupkg",
+        "Amqp.1.1.9-dnx-preview.nupkg.sha512",
+        "Amqp.nuspec",
+        "lib/dnx451/Amqp.dll",
+        "lib/dnx451/Amqp.pdb",
+        "lib/dnx451/Amqp.xml",
+        "lib/dnxcore50/Amqp.dll",
+        "lib/dnxcore50/Amqp.pdb",
+        "lib/dnxcore50/Amqp.xml"
+      ]
+    },
     "Microsoft.Win32.Primitives/4.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3665,6 +3872,38 @@
         "System.Text.Encoding.Extensions.nuspec"
       ]
     },
+    "System.Text.RegularExpressions/4.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "0vDuHXJePpfMCecWBNOabOKCvzfTbFMNcGgklt3l5+RqHV5SzmF7RUVpuet8V0rJX30ROlL66xdehw2Rdsn2DA==",
+      "files": [
+        "lib/dotnet/System.Text.RegularExpressions.dll",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "ref/dotnet/de/System.Text.RegularExpressions.xml",
+        "ref/dotnet/es/System.Text.RegularExpressions.xml",
+        "ref/dotnet/fr/System.Text.RegularExpressions.xml",
+        "ref/dotnet/it/System.Text.RegularExpressions.xml",
+        "ref/dotnet/ja/System.Text.RegularExpressions.xml",
+        "ref/dotnet/ko/System.Text.RegularExpressions.xml",
+        "ref/dotnet/ru/System.Text.RegularExpressions.xml",
+        "ref/dotnet/System.Text.RegularExpressions.dll",
+        "ref/dotnet/System.Text.RegularExpressions.xml",
+        "ref/dotnet/zh-hans/System.Text.RegularExpressions.xml",
+        "ref/dotnet/zh-hant/System.Text.RegularExpressions.xml",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "System.Text.RegularExpressions.4.0.10.nupkg",
+        "System.Text.RegularExpressions.4.0.10.nupkg.sha512",
+        "System.Text.RegularExpressions.nuspec"
+      ]
+    },
     "System.Threading/4.0.10": {
       "type": "package",
       "serviceable": true,
@@ -3855,7 +4094,9 @@
     }
   },
   "projectFileDependencyGroups": {
-    "": [],
+    "": [
+      "Amqp >= 1.1.9-dnx-preview"
+    ],
     "DNX,Version=v4.5.1": [
       "fx/System ",
       "fx/System.Transactions "
@@ -3870,6 +4111,7 @@
       "System.Threading.Thread >= 4.0.0-beta-23516",
       "System.Threading.ThreadPool >= 4.0.10-beta-23516",
       "System.Threading.Timer >= 4.0.0",
+      "System.Text.RegularExpressions >= 4.0.10",
       "System.Net.NameResolution >= 4.0.0-beta-23516",
       "System.Net.Security >= 4.0.0-beta-23516",
       "System.Net.Sockets >= 4.1.0-beta-23516",
