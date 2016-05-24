@@ -2442,7 +2442,7 @@
     "runtime.win7.System.Net.NameResolution/4.0.0-beta-23516": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sjnMrhRMhiPcZN2VZY0RMTNoBJSwvmdvh1O1ngX7zAUY2zP1R5/5Db+NZcBM+WuoYXSiYoXeE65AR95hchmDlA==",
+      "sha512": "ZEaRaB5vh55DCC5snWe9deHHH1XdwqKBQnFzrKmVOymAiXI5VUioo4k4HsAp+xtMPHnGMrLDGegesKF2rMhp2Q==",
       "files": [
         "lib/DNXCore50/System.Net.NameResolution.dll",
         "ref/dotnet/_._",
@@ -3045,7 +3045,7 @@
     "System.Net.Sockets/4.1.0-beta-23516": {
       "type": "package",
       "serviceable": true,
-      "sha512": "Q2D1ew24ZIH4kOE4ZJCrtvNfSSiea3yOeqow2jsgEPJ9Gafu8atlU5EGfXM0LQvtsIeQ9i1YwqdyZQHaL/RySg==",
+      "sha512": "hJQxXC5OcecCG49Wg9PreHFC2tDZFwpqiGhRnQMK47eo8ozvOMl2XqISanclj1cjCIUZDUSn0XxggVC7Z2WppA==",
       "files": [
         "lib/MonoAndroid10/_._",
         "lib/MonoTouch10/_._",
